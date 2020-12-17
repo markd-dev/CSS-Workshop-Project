@@ -3,13 +3,13 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { HelloComponent } from "./hello.component";
 
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app.routes";
 import { HttpClientModule } from "@angular/common/http";
 import {MatButtonModule} from '@angular/material/button';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports: [
@@ -22,7 +22,7 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     MatButtonModule
   ],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent,HomeComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
