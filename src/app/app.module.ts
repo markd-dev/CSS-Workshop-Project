@@ -8,8 +8,9 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app.routes";
 import { HttpClientModule } from "@angular/common/http";
-import {MatButtonModule} from '@angular/material/button';
-import { HomeComponent } from './home/home.component';
+import { MatButtonModule } from "@angular/material/button";
+import { HomeComponent } from "./home/home.component";
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
   imports: [
@@ -20,9 +21,10 @@ import { HomeComponent } from './home/home.component';
     MatProgressSpinnerModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    SharedModule
   ],
-  declarations: [AppComponent,HomeComponent],
+  declarations: [AppComponent, HomeComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
